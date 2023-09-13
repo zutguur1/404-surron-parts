@@ -1,0 +1,141 @@
+@import 'variables'
+
+.empty-cart-message
+  display: none
+
+  .empty-cart &
+    display: block
+
+.empty-cart-message
+  font-size: 20px
+  text-align: center
+
+.cart-items
+  border-top: 1px solid $text-color
+  list-style: none
+  margin: 0 auto
+  max-width: 700px
+  padding: 0
+  width: 100%
+
+.cart-item
+  +flexbox
+  +align-items(center)
+  border-bottom: 1px solid $text-color
+  padding: 40px 0
+
+  @media screen and (max-width: $break-small)
+    +align-items(flex-start)
+    +flex-wrap(wrap)
+    padding: 30px 0
+
+.cart-item-remove
+  margin-right: 25px
+
+  @media screen and (max-width: $break-small)
+    margin-right: 10px
+
+.cart-remove-icon
+  display: block
+  fill: $text-color
+
+  .cart-item-remove:hover &, .cart-item-remove:focus &
+    fill: $link-hover-color
+
+.cart-item-image
+  background-position: 50% 50%
+  background-size: cover
+  display: block
+  height: 120px
+  margin-right: 20px
+  max-width: 120px
+  width: 100%
+
+  @media screen and (max-width: $break-small)
+    height: 60px
+    margin-right: 10px
+    max-width: 60px
+
+.cart-item-details-quantity-price
+  +flexbox
+  +align-items(flex-start)
+  width: 100%
+
+  @media screen and (max-width: $break-small)
+    +flex-direction(column)
+    width: calc(100% - 105px)
+
+.cart-item-details-unit-price
+  margin-top: 10px
+
+.cart-item-details
+  width: 100%
+
+.cart-item-details-name
+  font-size: 18px
+  margin-bottom: 10px
+
+.cart-item-quantity-price
+  +flexbox
+  width: 100%
+
+  @media screen and (max-width: $break-small)
+    margin-top: 20px
+
+.cart-item-details-price
+  margin-left: auto
+  padding: 8px 0
+
+.cart-item-quantity-holder
+  margin-left: auto
+  width: 60px
+
+  @media screen and (max-width: $break-small)
+    width: 40px
+    margin-left: 0
+
+  input
+    border-bottom: 1px solid $text-color
+    padding: 8px 0
+    text-align: center
+    width: 100%
+
+    &:active, &:focus
+      background-color: $accent-color
+      border-color: $link-hover-color
+
+.cart-footer
+  margin: 50px auto 0
+  max-width: 700px
+  width: 100%
+
+  @media screen and (max-width: $break-small)
+    margin: 30px auto 0
+
+.cart-subtotal
+  +flexbox
+  font-size: 25px
+
+.cart-subtotal-amount
+  margin-left: auto
+
+.checkout-btn
+  display: block
+  margin: 50px auto 0
+
+  @media screen and (max-width: $break-small)
+    margin: 30px auto 0
+    max-width: 100%
+
+a.button.continue-shopping
+  display: block
+  font-size: 16px
+  height: auto
+  line-height: normal
+  margin: 20px auto 0
+  padding: 10px
+
+
+  &:active, &:focus, &:hover
+    border-color: transparent
+    color: $text-color

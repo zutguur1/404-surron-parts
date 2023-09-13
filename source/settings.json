@@ -1,0 +1,304 @@
+{
+  "name": "Sunscreen",
+  "version": "1.6.0",
+  "images": [
+    {
+      "variable": "logo",
+      "label": "Logo",
+      "description": "Adds your logo to the header"
+    },
+    {
+      "variable": "welcome_image",
+      "label": "Welcome image",
+      "description": "Adds a welcome image to the Home page"
+    }
+  ],
+  "image_sets": [
+    {
+      "variable": "lookbook_images",
+      "label": "Lookbook images",
+      "description": "Adds a gallery to the specified Lookbook page"
+    }
+  ],
+  "fonts": [
+    {
+      "variable": "shop_name_font",
+      "label": "Shop Name Font",
+      "default": "Karla"
+    },
+    {
+      "variable": "primary_font",
+      "label": "Primary Font",
+      "default": "Karla"
+    }
+  ],
+  "colors": [
+    {
+      "variable": "background_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "variable": "accent_color",
+      "label": "Accent Background Color",
+      "default": "#F7F8FC"
+    },
+    {
+      "variable": "text_color",
+      "label": "Text Color",
+      "default": "#3B7530"
+    },
+    {
+      "variable": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "variable": "button_background_color",
+      "label": "Button Background Color",
+      "default": "#3B7530"
+    },
+    {
+      "variable": "button_hover_background_color",
+      "label": "Button Hover Background Color",
+      "default": "#1C4D12"
+    },
+    {
+      "variable": "link_hover_color",
+      "label": "Link Hover Color",
+      "default": "#1C4D12"
+    },
+    {
+      "variable": "shop_name_text_color",
+      "label": "Shop Name Text Color",
+      "default": "#3B7530"
+    },
+    {
+      "variable": "welcome_header_text_color",
+      "label": "Welcome Header Text Color",
+      "default": "#3B7530"
+    }
+  ],
+  "options": [
+    {
+      "variable": "announcement_message_text",
+      "label": "Announcement text",
+      "type": "text",
+      "description": "Displays an announcement message on the top of every page"
+    },
+    {
+      "variable": "maintenance_message",
+      "label": "Maintenance mode message",
+      "type": "text",
+      "description": "A message visitors see when your shop is in Maintenance Mode",
+      "default": "We're working on our shop right now.<br /><br />Please check back soon."
+    },
+    {
+      "variable": "lookbook_page_name",
+      "label": "Lookbook Page Name",
+      "type": "text",
+      "description": "Create a custom page for your lookbook, then enter the page name in this field"
+    },
+    {
+      "variable": "welcome_text",
+      "label": "Welcome text",
+      "type": "text",
+      "description": "Displays a welcome message on the Home page"
+    },
+    {
+      "variable": "featured_items_type",
+      "label": "Featured items type",
+      "type": "select",
+      "options": ["Categories", "Products"],
+      "default": "Products",
+      "description": "Displays featured products or categories on the Home page"
+    },
+    {
+      "variable": "featured_items",
+      "label": "Featured items",
+      "type": "select",
+      "options": "0..100",
+      "default": 12,
+      "description": "The number of items featured on the Home page"
+    },
+    {
+      "variable": "max_products_per_row",
+      "label": "Maximum products per row",
+      "type": "select",
+      "options": "1..4",
+      "default": 3,
+      "description": "The maximum number of products displayed per row on larger screens"
+    },
+    {
+      "variable": "max_products_per_row_mobile",
+      "label": "Maximum products per row (mobile)",
+      "type": "select",
+      "options": "1..2",
+      "default": 2,
+      "description": "The number of products displayed per row on smaller screens"
+    },
+    {
+      "variable": "grid_image_style",
+      "label": "Product grid image style",
+      "type": "select",
+      "options": [
+        ["Default", "default"],
+        ["Fit to square", "fit-to-square"],
+        ["Crop to square", "crop-to-square"]
+      ],
+      "default": "crop-to-square",
+      "description": "Sets the display of images in the product grid"
+    },
+    {
+      "variable": "products_per_page",
+      "label": "Products per page",
+      "type": "select",
+      "options": "1..100",
+      "default": 36,
+      "description": "The number of products displayed per page"
+    },
+    {
+      "variable": "money_format",
+      "label": "Price display",
+      "type": "select",
+      "options": [
+        ["Currency sign", "sign"],
+        ["Currency code with sign", "sign_and_code"]
+      ],
+      "default": "sign",
+      "description": "Sets the display of prices in your shop"
+    },
+    {
+      "variable": "show_similar_products",
+      "label": "Show related products",
+      "type": "boolean",
+      "default": true,
+      "description": "Displays related products on the Product page"
+    },
+    {
+      "variable": "show_search",
+      "label": "Show search",
+      "type": "boolean",
+      "default": false,
+      "description": "Displays a search field in the Shop dropdown menu"
+    },
+    {
+      "variable": "show_sold_out_product_options",
+      "label": "Show sold out product options",
+      "type": "boolean",
+      "default": true,
+      "description": "Shows sold out product options in the Product page dropdowns",
+      "requires": "inventory"
+    },
+    {
+      "variable": "secondary_image_on_hover",
+      "label": "Show secondary image on hover",
+      "type": "boolean",
+      "default": false,
+      "description": "Displays the secondary product image when hovering over thumbnails"
+    },
+    {
+      "variable": "twitter_url",
+      "label": "Twitter URL",
+      "type": "text",
+      "description": "Ex: http://twitter.com/bigcartel"
+    },
+    {
+      "variable": "facebook_url",
+      "label": "Facebook URL",
+      "type": "text",
+      "description": "Ex: http://facebook.com/bigcartel"
+    },
+    {
+      "variable": "tumblr_url",
+      "label": "Tumblr URL",
+      "type": "text",
+      "description": "Ex: http://bigcartel.tumblr.com"
+    },
+    {
+      "variable": "instagram_url",
+      "label": "Instagram URL",
+      "type": "text",
+      "description": "Ex: http://instagram.com/bigcartel"
+    },
+    {
+      "variable": "pinterest_url",
+      "label": "Pinterest URL",
+      "type": "text",
+      "description": "Ex: http://pinterest.com/bigcartel"
+    }
+  ],
+  "checkout": {
+    "header_image": "{{ logo }}",
+    "header_image_max_width": "754px",
+    "header_image_max_height": "180px",
+    "title_font": "{{ shop_name_font }}",
+    "title_font_weight": "normal",
+    "title_font_size": "38px",
+    "title_color": "{{ shop_name_text_color }}",
+    "title_background_color": "{{ background_color }}",
+    "title_vertical_padding": "40px",
+    "accent_background_color": "{{ accent_color }}",
+    "background_color": "{{ background_color }}",
+    "body_font": "{{ primary_font }}",
+    "body_font_size": "16px",
+    "secondary_font_size": "16px",
+    "step_border_color": "{{ text_color }}",
+    "step_border_width": "2px",
+    "step_border_style": "solid",
+    "step_border_radius": "0px",
+    "step_inactive_header_color": " {{ text_color }}",
+    "step_header_font": "{{ primary_font }}",
+    "step_background_color": "{{ background_color }}",
+    "content_background_color": "{{ background_color }}",
+    "content_header_background_color": "{{ background_color }}",
+    "content_header_color": "{{ text_color }}",
+    "content_horizontal_padding": "0px",
+    "content_color": "{{ text_color }}",
+    "content_header_font_size": "18px",
+    "content_border_color": "transparent",
+    "content_border_radius": "0px",
+    "content_border_width": "0px",
+    "error_background_color": "#a02936",
+    "error_color": "#ffffff",
+    "error_border_radius": "0px",
+    "error_border_color": "#a02936",
+    "error_font_size": "16px",
+    "input_focus_color": "#000000",
+    "input_focus_background_color": "#ffffff",
+    "input_focus_border_color": "#777777",
+    "input_error_border_color": "#a02936",
+    "input_color": "#000000",
+    "input_error_color": "#000000",
+    "input_border_color": "#bfbfbf",
+    "input_background_color": "#ffffff",
+    "input_error_background_color": "#ffffff",
+    "input_border_radius": "0px",
+    "input_border_width": "2px",
+    "input_font": "{{ primary_font }}",
+    "input_font_size": "16px",
+    "label_font_size": "16px",
+    "button_color": "{{ button_text_color }}",
+    "button_border_width": "0px",
+    "button_border_radius": "0px",
+    "button_font": "{{ primary_font }}",
+    "button_font_size": "16px",
+    "button_hover_color": "{{ button_text_color }}",
+    "button_background_color": "{{ button_background_color }}",
+    "button_hover_background_color": "{{ button_hover_background_color }}",
+    "button_text_transform": "none",
+    "link_color": "{{ text_color }}",
+    "link_font_size": "16px",
+    "link_hover_color": "{{ text_color }}",
+    "step_header_color": "{{ text_color }}",
+    "step_header_font_size": "22px",
+    "summary_color": "{{ text_color }}",
+    "summary_font_size": "16px",
+    "summary_secondary_color": "{{ text_color }}",
+    "summary_item_border_color": "{{ text_color }}",
+    "summary_item_list_border_color": "{{ text_color }}",
+    "summary_submit_background_color": "{{ background_color }}",
+    "summary_submit_border_color": "{{ text_color }}",
+    "summary_submit_border_width": "4px"
+  }
+}
